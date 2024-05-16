@@ -9,7 +9,6 @@ import backoff
 os.environ["HTTP_PROXY"] = "http://localhost:10809"
 os.environ["HTTPS_PROXY"] = "http://localhost:10809"
 
-# openai.api_key = ""
 
 prompt_is_state_or_behavior_context = """
 [Context Type Identification Task]
@@ -196,10 +195,6 @@ prompt_dict = {
 
 import anthropic
 
-# client = anthropic.Anthropic(
-#     # defaults to os.environ.get("ANTHROPIC_API_KEY")
-#     api_key="xxx",
-# )
 
 message = client.messages.create(
     model="claude-3-sonnet-20240229",
