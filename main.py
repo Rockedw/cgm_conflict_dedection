@@ -9,7 +9,7 @@ import backoff
 os.environ["HTTP_PROXY"] = "http://localhost:10809"
 os.environ["HTTPS_PROXY"] = "http://localhost:10809"
 
-openai.api_key = "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"
+openai.api_key = ""
 
 prompt_is_state_or_behavior_context = """
 [Context Type Identification Task]
@@ -198,7 +198,7 @@ import anthropic
 
 client = anthropic.Anthropic(
     # defaults to os.environ.get("ANTHROPIC_API_KEY")
-    api_key="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",
+    api_key="xxx",
 )
 
 message = client.messages.create(
